@@ -16,6 +16,7 @@ public class TestSuite extends BaseTest{
     AlertPage alertPage = new AlertPage();
     Comments comments = new Comments();
     ShoppingPage shoppingPage = new ShoppingPage();
+    Login login = new Login();
     @Test
     public void userShouldBeAbleToLoginInSuccessfully(){
         homePage.clickOnRegisterButton();
@@ -63,6 +64,7 @@ public class TestSuite extends BaseTest{
         String url = faceBook.currentPage();
         System.out.println(url);
         Assert.assertTrue(url.contains("facebook.com"));
+
     }
     @Test
     public void userShouldBeAbleToOpenAlertPage(){
@@ -88,6 +90,13 @@ public class TestSuite extends BaseTest{
            shoppingPage.userClicksOnBooks();
            shoppingPage.userSelectsFirstPrizeBook();
          }
-
+         @Test
+          public void userShouldBeAbleToLoginOnLoginPageSuccessfully(){
+          login.userGoToLoginPage();
+          login.userTypesEmail("abc@test.com");
+          login.userTypesPassword("abc123");
+          login.userClicksOnLogin();
+          
+         }
 
 }

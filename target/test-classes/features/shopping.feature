@@ -1,6 +1,6 @@
 Feature: Shopping
 
-  @Test
+  @shopping
   Scenario: User should be able to buy item
     Given user is on the main page
     When  user clicks on Books option from main page

@@ -12,7 +12,12 @@ public class Comments extends Utils{
       clickOnElement(newslink);
       waitFor(commentButton);
       waitFor(titleText);
-      enterText(titleText,"Mr Sam");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        enterText(titleText,"Mr Sam");
 
       enterText(commentBox,"Its good.");
       clickOnElement(commentButton);

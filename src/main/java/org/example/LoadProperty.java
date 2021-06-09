@@ -25,6 +25,8 @@ public class LoadProperty {
         searchCount =Integer.parseInt (getProperty("searchCount"));
         computerMenuItem = getProperty("computerMenuItem");
         computerMenuItemCount = Integer.parseInt(getProperty("computerMenuItemCount"));
+        currencyChange = getProperty("currencyChange");
+        commentAdded = getProperty("commentAdded");
 
     }
     public String getProperty(String keyName){
@@ -60,5 +62,7 @@ public class LoadProperty {
     public  int searchCount;
     public  String computerMenuItem;
     public  int computerMenuItemCount;
+    public String currencyChange;
+    public String commentAdded;
 
 }

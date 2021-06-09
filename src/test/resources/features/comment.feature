@@ -1,5 +1,5 @@
 Feature: Comment added
-   @Test
+   @com
   Scenario: User should be to add comment
 
     Given user is on main page
